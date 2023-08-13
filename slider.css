@@ -1,27 +1,27 @@
 #outerbox{
     z-index:-1000;
     height:600px;
-   max-width:1345px;
+   width:1345px;
     overflow:hidden;
-    display: none;
+    
 
 }
 
 #sliderbox{
     position:relative;
-    max-width:5380px;
+    width:5380px;
     animation-name:slide;
     animation-duration:20s;
     animation-iteration-count: infinite;
-    display: none;
+    
 
 }
 
 #sliderbox img{
 
-    max-width:1345px;
+    width:1345px;
     float:left;
-    display: none;
+    
 
 }
 

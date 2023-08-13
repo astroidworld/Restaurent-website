@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="order1.css">
         
         <link rel="stylesheet" href="Footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -46,8 +47,9 @@
                 <center>
                     <table border="0" width="100%">
                         <tr>
-                            <td width="20%">Name</td>
-                            <td width="80%"><input type="text" placeholder="Name"></td>
+                            <td>Name</td>
+                            <td><input type="text"  placeholder="Name"></td>
+                           
                         </tr>
                             <td>Email</td>
                             <td><input type="text"  placeholder="Email"></td>
@@ -55,31 +57,22 @@
                             <td>Mobile</td>
                             <td><input type="text"  placeholder="Mobile"></td>
                         </tr>
-                            <td>Item Name</td>
-                            <td><input type="text"  placeholder="Item Name"></td>
-                        </tr>
-                            <td>Quantity</td>
+                           
+                            <td>message</td>
                             <td>
-                                <select>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    </select>
-                                </td>
-                        </tr>
-                            <td>Address</td>
-                            <td>
-                                <textarea>
-        
-                                    </textarea>
+                                <textarea></textarea>
                                 </td>
                            
                         </tr>
-                        <td>Item Name</td>
-                            <td><input type="button"value="Submit"></td>
+                        
+                        <td><input type="button" class="btn" onclick="openpopup()" value="Send">
+                            <div class="popup" id="popup">
+                                
+                                <h2>Thank You!</h2>
+                                <p>We have received your message and will contact soon!</p>
+                                <button type="button" onclick="closepopup()">OK</button>
+            
+                            </div>
                         </tr>
                     </table>
                     </center>
@@ -90,6 +83,7 @@
 
             </div>
           </div>
+
           <!--code for contact-->
             
             <!--code for Footer-->
@@ -123,15 +117,20 @@
                 </div>
                 <div class="footerb">
                     
-                        <b>Address</b>
+                        <b>Contacts</b>
                         <br>
                         <br>
                         <br>
                         Address:<br>
-                        1B/2 Thakurpukur,Kolkata<br>
+                        1B/2 Thakurpukur,Kolkata-700063<br>
                         Email:sathia@gmail.com<br>
                         Mobile:9762314590<br>
                         Time:9.00 AM to 9.00 PM<br>
+                        <a href="https://www.facebook.com/kanka.bhattacharjee.3?mibextid=ZbWKwL" class="fa fa-facebook"></a>&nbsp
+
+                        <a href="https://instagram.com/iamkanka?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram"></a>
+
+
                 </div>
                 <div class="footerb">
                     <b>Directions</b>
@@ -142,6 +141,20 @@
             </div>
 
             <!--code for Footer-->
+
+            <script>
+                let popup=document.getElementById("popup");
+
+                function openpopup()
+                {
+                      popup.classList.add("open-popup")
+                }
+
+                function closepopup()
+                {
+                      popup.classList.remove("open-popup")
+                }
+            </script>
 
     </body>
 </html>

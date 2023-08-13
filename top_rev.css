@@ -12,7 +12,7 @@
 {
     border:0px solid red;
     width:370px;
-    height:250px;
+    height:265px;
     float:left;
     margin-top: 20px;
     margin-bottom:20px;
@@ -43,14 +43,9 @@
     align-items: center;
 }
 
-p{
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.footerb a
+.pname p
 {
-    text-decoration: none;
+    text-align: center;
+
 }
 

@@ -4,15 +4,14 @@
    display:flex;
    justify-content: space-around;
    align-items: center;
-   flex-wrap: wrap;
-   gap:50px;
+   
 }
 
 .top_cat_pro
 {
     border:0px solid red;
     width:370px;
-    height:250px;
+    height:200px;
     float:left;
     margin-top: 20px;
     margin-bottom:20px;
@@ -29,28 +28,4 @@
     width:100%;
 }
 
-.checked
-{
-    color:orange;
-}
-
-.stars
-{
-    border:0px solid black;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-p{
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.footerb a
-{
-    text-decoration: none;
-}
 
