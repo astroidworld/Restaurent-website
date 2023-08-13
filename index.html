@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="slider.css">
         <link rel="stylesheet" href="top_cat.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="Footer.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -16,22 +17,30 @@
     <body>
         <!--code for nav bar-->
         <div id="menu">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="About.html">ABOUT</a></li>
-                <li><a href="#">MENU</a>
-                    <ul>
-                        <li><a href="VegThali.html">Veg Thali</a></li>
-                        <li><a href="NonVegThali.html">Non-Veg Thali</a></li>
-                        <li><a href="chaat.html">chaat</a></li>
-                        <li><a href="FatFood.html">Fast Food</a></li>
-                        <li><a href="Soup.html">Soup</a></li>
-                        <li><a href="Pasta(4).html">Pasta</a></li>
-                    </ul>
-                </li>
-                <li><a href="order.html">ORDER</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
+
+            <div class="logo-sec">
+                <img src="./img/logo.webp" alt="logo" class="logo">
+            </div>
+
+            <i class="bi bi-list  menuicon"></i>
+            
+
+            <div class="mainmenu">
+                <div class="menu-option"><a href="index.html">HOME</a></div>
+                <div class="menu-option"><a href="About.html">ABOUT</a></div>
+                <div class="menu-option has-submenu" id="has-submenu">MENU
+                    <div class="submenu">
+                        <div class="submenu-options"><a class="sub-a" href="VegThali.html">Veg Thali</a></div>
+                        <div class="submenu-options"><a class="sub-a" href="NonVegThali.html">Non-Veg Thali</a></div>
+                        <div class="submenu-options"><a class="sub-a" href="chaat.html">chaat</a></div>
+                        <div class="submenu-options"><a class="sub-a" href="FatFood.html">Fast Food</a></div>
+                        <div class="submenu-options"><a class="sub-a" href="Soup.html">Soup</a></div>
+                        <div class="submenu-options"><a class="sub-a" href="Pasta(4).html">Pasta</a></div>
+                    </div>
+                </div>
+                <div class="menu-option"><a href="order.html">ORDER</a></div>
+                <div class="menu-option"><a href="contact.html">CONTACT</a></div>
+            </div>
         </div>
          <!--code for nav bar-->
 
@@ -39,10 +48,10 @@
           
           <div id="outerbox">
             <div id="sliderbox">
-                <img src="fast4.jpg">
-                <img src="fast5.jpg">
-                <img src="fast6.jpg">
-                <img src="fast7.jpg">
+                <img src="./img/fast4.jpg">
+                <img src="./img/fast5.jpg">
+                <img src="./img/fast6.jpg">
+                <img src="./img/fast7.jpg">
 
 
             </div>
@@ -55,7 +64,7 @@
            <!--code for slider-->
 
            <br>
-           <center><h1>Top Food Items</h1></center>
+           <h1>Top Food Items</h1>
            <br>
 
 
@@ -63,7 +72,7 @@
 
             <div class ="top_cat">
 
-                <div class="top_cat_pro"><img src="2.jpg">
+                <div class="top_cat_pro"><img src="./img/2.jpg">
                     <div class="stars">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -76,7 +85,7 @@
                         <p>Veg Burgar</p>
                     </div>
                 </div>
-                <div class="top_cat_pro"><img src="9.jpg">
+                <div class="top_cat_pro"><img src="./img/9.jpg">
                     <div class="stars">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -90,7 +99,7 @@
                         </div>
                 
                 </div>
-                <div class="top_cat_pro"><img src="fast3.jpg">
+                <div class="top_cat_pro"><img src="./img/fast3.jpg">
 
                     <div class="stars">
                         <span class="fa fa-star checked"></span>
@@ -110,7 +119,7 @@
             </div>
 
             <div class ="top_cat">
-                <div class="top_cat_pro"><img src="pasta2.jpg">
+                <div class="top_cat_pro"><img src="./img/pasta2.jpg">
                     <div class="stars">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -123,7 +132,7 @@
                             <p>Pasta</p>
                         </div>
                 </div>
-                <div class="top_cat_pro"><img src="ch5.jpg">
+                <div class="top_cat_pro"><img src="./img/ch5.jpg">
                     <div class="stars">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -136,7 +145,7 @@
                             <p>Chaat</p>
                         </div>
                 </div>
-                <div class="top_cat_pro"><img src="s4.jpg">
+                <div class="top_cat_pro"><img src="./img/s4.jpg">
 
                     <div class="stars">
                         <span class="fa fa-star checked"></span>
@@ -162,7 +171,7 @@
              <div class ="top_cat">
 
                 <div class="top_cat_pro">
-                    <img src="images (4).jpg">
+                    <img src="./img/images (4).jpg">
                     <h3>Pravin Kumar</h3>
                     <P>Very Good Restaurent</P>
                     <div class="stars">
@@ -175,7 +184,7 @@
 
                 </div>
                 <div class="top_cat_pro">
-                    <img src="images (5).jpg">
+                    <img src="./img/images (5).jpg">
                     <h3>princy</h3>
                     <P>Very Good Restaurent</P>
                     <div class="stars">
@@ -188,7 +197,7 @@
                 </div>
                 </div>
                 <div class="top_cat_pro">
-                    <img src="360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg">
+                    <img src="./img/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg">
                     <h3>Ravi Swan</h3>
                     <p>very beautiful Restaurent</p>
 
@@ -219,16 +228,16 @@
              <div class ="top_cat">
 
                 <div class="top_cat_pro">
-                    <img src="images (8).jpg">
+                    <img src="./img/images (8).jpg">
                     
 
                 </div>
                 <div class="top_cat_pro">
-                    <img src="images (11).jpg">
+                    <img src="./img/images (11).jpg">
                     
                 
                 </div>
-                <div class="top_cat_pro"><img src="images (13).jpg">
+                <div class="top_cat_pro"><img src="./img/images (13).jpg">
 
                 
                 </div>
@@ -237,13 +246,13 @@
             </div>
 
             <div class ="top_cat">
-                <div class="top_cat_pro"><img src="images (14).jpg">
+                <div class="top_cat_pro"><img src="./img/images (14).jpg">
                     
                 </div>
-                <div class="top_cat_pro"><img src="images (15).jpg">
+                <div class="top_cat_pro"><img src="./img/images (15).jpg">
                    
                 </div>
-                <div class="top_cat_pro"><img src="image(12).jpg">
+                <div class="top_cat_pro"><img src="./img/image(12).jpg">
 
                     
                 </div>
@@ -302,7 +311,7 @@
                 </div>
                 <div class="footerb">
                     <b>Directions</b>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29497.59519651541!2d88.29859397292833!3d22.459139953528506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027a8f44f3019b%3A0xce5982d96da50855!2sThakurpukur%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1688581547979!5m2!1sen!2sin" width="100%" height="120px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="./img/https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29497.59519651541!2d88.29859397292833!3d22.459139953528506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027a8f44f3019b%3A0xce5982d96da50855!2sThakurpukur%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1688581547979!5m2!1sen!2sin" width="100%" height="120px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 
 
@@ -310,5 +319,6 @@
 
             <!--code for Footer-->
 
+            <script src="./index.js"></script>
     </body>
 </html>
