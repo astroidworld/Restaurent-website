@@ -1,75 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *
 {
     margin:0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-#menu ul
+#menu
 {
+    width: 100%;
+    background-color: #f07c00;
+    height: 70px;    
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#menu .mainmenu
+{
+    display: flex;
     list-style: none;
-    z-index:1000;
+    gap: 30px;    
 }
 
-#menu ul li
-{
-    background-color: black;
-    border:1px solid white;
-    width: 267px;
-    height:40px;
-    text-align: center;
-    line-height: 40px;
-    float: left;
-    position: relative;
-}
-
-
-#menu ul li a
-{
+#menu .mainmenu .menu-option a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+#menu .mainmenu .menu-option a::after
+{
+    content: '';
     display: block;
+    position: relative;
+    left: -5px;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    transition: .5s;
+}
+#menu .mainmenu .menu-option a:hover::after
+{
+    width: 55px;
 }
 
 
-#menu ul li a:hover
+.menuicon
 {
-    background-color: green;
-}
-
-#menu ul ul
-{
-    position:absolute;
-     display: none;
-
-}
-
-#menu ul li:hover > ul
-{
-     display: block;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    display: none;
 }
 
 
 
-
-@media screen and(max-width: 767px)
+/* submenu */
+.has-submenu
 {
-    ul 
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.submenu
+{
+    padding: 0px;
+    position: absolute;
+    left: -60px;
+    top: 51px;
+    height: 0;
+    background-color: #d83737;    
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 99;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.submenuon
+{
+    height: 350px;
+    padding: 20px;
+}
+
+
+
+
+@media screen and (max-width:850px){
+    .menuicon
     {
-      display:block;
-      width: 100%;
-      
+        display: block;
     }
 
-    ul li
+    .mainmenu
     {
-      text-align: left;
-
-      width:100%;
+        position: absolute;
+        background-color: #ff911b;
+        width: 300px;
+        box-shadow: 3px 3px 5px #000000;
+        top: 0;
+        left: -340px;
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 100px;
+        align-items: center;
+        transition: 1s;
     }
-    ul li a 
+
+    .mainmenu-visable
     {
-        width:100%;
+        left: 0px;
     }
 
 }
