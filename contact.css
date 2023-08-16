@@ -9,7 +9,26 @@
    
    
 }
-
+.form-ele
+{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+.name
+{
+    width: 800px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    /* f07c00 */
+}
+.name:focus
+{
+    border-bottom: 3px solid #f07c00;
+}
 .contact_content
 {
     width:49%;

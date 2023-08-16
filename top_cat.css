@@ -1,3 +1,9 @@
+.heading-topfood
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .top_cat
 {
    border:0px solid black;
@@ -11,12 +17,15 @@
 .top_cat_pro
 {
     border:0px solid red;
-    width:370px;
-    height:265px;
+    max-width:370px;
+    min-height:265px;
     float:left;
     margin-top: 20px;
     margin-bottom:20px;
+    padding-bottom: 20px;
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0,0,0,0.35);
+    border-radius: 10px;
+    cursor: pointer;
     transition: transform 1s;
 }
 
@@ -27,6 +36,9 @@
 
 .top_cat_pro img{
     width:100%;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 5px solid #f07c00;
 }
 
 .checked
@@ -43,9 +55,29 @@
     align-items: center;
 }
 
+.stars span
+{
+    margin: 20px 7px 20px 7px;
+    font-size: 30px;
+}
+
 .pname p
 {
     text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
 
 }
 
+@media screen and (max-width:390px) {
+    .top_cat_pro
+    {
+        margin: 20px;
+
+    }
+    .top_cat
+    {
+        gap: 0px;
+    }
+}
